@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		214D0F7C360F5A2E70956B8A /* Pods_TestCICD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46535FEBDDC855810A7024AB /* Pods_TestCICD.framework */; };
 		B783A68727835ACF00B1C7B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B783A68627835ACF00B1C7B4 /* AppDelegate.swift */; };
 		B783A68927835ACF00B1C7B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B783A68827835ACF00B1C7B4 /* SceneDelegate.swift */; };
 		B783A68B27835ACF00B1C7B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B783A68A27835ACF00B1C7B4 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18DB15FA80EDB51C00701A35 /* Pods-TestCICD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCICD.release.xcconfig"; path = "Target Support Files/Pods-TestCICD/Pods-TestCICD.release.xcconfig"; sourceTree = "<group>"; };
+		46535FEBDDC855810A7024AB /* Pods_TestCICD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCICD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B783A68327835ACF00B1C7B4 /* TestCICD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCICD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B783A68627835ACF00B1C7B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B783A68827835ACF00B1C7B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		B783A68F27835AD000B1C7B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B783A69227835AD000B1C7B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B783A69427835AD000B1C7B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F23F065EBABDD536CD2C6629 /* Pods-TestCICD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCICD.debug.xcconfig"; path = "Target Support Files/Pods-TestCICD/Pods-TestCICD.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				214D0F7C360F5A2E70956B8A /* Pods_TestCICD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DE7F48F75341AFDB65B0AD8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F23F065EBABDD536CD2C6629 /* Pods-TestCICD.debug.xcconfig */,
+				18DB15FA80EDB51C00701A35 /* Pods-TestCICD.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9E01DC9D0D61121D23995F68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46535FEBDDC855810A7024AB /* Pods_TestCICD.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B783A67A27835ACE00B1C7B4 = {
 			isa = PBXGroup;
 			children = (
 				B783A68527835ACF00B1C7B4 /* TestCICD */,
 				B783A68427835ACF00B1C7B4 /* Products */,
+				1DE7F48F75341AFDB65B0AD8 /* Pods */,
+				9E01DC9D0D61121D23995F68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B783A69727835AD000B1C7B4 /* Build configuration list for PBXNativeTarget "TestCICD" */;
 			buildPhases = (
+				396516941A03DCEB34F91E29 /* [CP] Check Pods Manifest.lock */,
 				B783A67F27835ACF00B1C7B4 /* Sources */,
 				B783A68027835ACF00B1C7B4 /* Frameworks */,
 				B783A68127835ACF00B1C7B4 /* Resources */,
@@ -132,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		396516941A03DCEB34F91E29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestCICD-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B783A67F27835ACF00B1C7B4 /* Sources */ = {
@@ -284,13 +334,15 @@
 		};
 		B783A69827835AD000B1C7B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F23F065EBABDD536CD2C6629 /* Pods-TestCICD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4673NFB24A;
-				GENERATE_INFOPLIST_FILE = YES;
+				DONT_GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = TestCICD/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -312,13 +364,15 @@
 		};
 		B783A69927835AD000B1C7B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18DB15FA80EDB51C00701A35 /* Pods-TestCICD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4673NFB24A;
-				GENERATE_INFOPLIST_FILE = YES;
+				DONT_GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = TestCICD/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
