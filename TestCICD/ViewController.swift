@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
 
 class ViewController: UIViewController {
 //save
@@ -22,6 +25,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        AppCenter.start(withAppSecret: "5b84a088-30a3-40f5-ac59-20dfa51aa207", services:[
+          Analytics.self,
+          Crashes.self
+        ])
     }
 
 }
