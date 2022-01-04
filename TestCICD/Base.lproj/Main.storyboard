@@ -31,9 +31,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcd-vJ-PY0">
-                                <rect key="frame" x="169" y="546" width="76" height="31"/>
+                                <rect key="frame" x="138.5" y="546" width="137.5" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Click up"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Click up testflight"/>
                                 <connections>
                                     <action selector="clickedup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="caG-vG-fth"/>
                                 </connections>
