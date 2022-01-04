@@ -22,11 +22,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooV-ee-wTp">
+                                <rect key="frame" x="176" y="472" width="62" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Crash"/>
+                                <connections>
+                                    <action selector="crashClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6hp-4J-ldy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcd-vJ-PY0">
+                                <rect key="frame" x="169" y="546" width="76" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Click up"/>
+                                <connections>
+                                    <action selector="clickedup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="caG-vG-fth"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Zwm-6i-s3Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="16P-PU-k5l"/>
+                            <constraint firstItem="mcd-vJ-PY0" firstAttribute="centerX" secondItem="ooV-ee-wTp" secondAttribute="centerX" id="9CP-p1-s4a"/>
+                            <constraint firstItem="ooV-ee-wTp" firstAttribute="centerX" secondItem="Zwm-6i-s3Q" secondAttribute="centerX" id="Sv1-Yc-r1J"/>
+                            <constraint firstItem="ooV-ee-wTp" firstAttribute="top" secondItem="Zwm-6i-s3Q" secondAttribute="bottom" constant="7.5" id="aJh-Mh-78f"/>
+                            <constraint firstItem="mcd-vJ-PY0" firstAttribute="top" secondItem="ooV-ee-wTp" secondAttribute="bottom" constant="43" id="iYK-uD-79U"/>
                             <constraint firstItem="Zwm-6i-s3Q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xUz-Ty-p9f"/>
                         </constraints>
                     </view>
