@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     @IBAction func clickedup(_ sender: Any) {
         fatalError("Test CI/CD Issues d2")
-
+afm,asm,fm,,mafs
     }
     
     
@@ -30,6 +30,7 @@ class ViewController: UIViewController {
           Analytics.self,
           Crashes.self
         ])
+        
     }
 
 }
