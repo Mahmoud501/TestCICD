@@ -11,15 +11,14 @@ import AppCenterAnalytics
 import AppCenterCrashes
 
 class ViewController: UIViewController {
-//savessf
 
     @IBAction func crashClicked(_ sender: Any) {
         fatalError("Test CI/CD Issues")
     }
     
     @IBAction func clickedup(_ sender: Any) {
-        fatalError("Test CI/CD Issues 2")
-
+        fatalError("Test CI/CD Issues d2")
+afm,asm,fm,,mafs
     }
     
     
@@ -30,6 +29,7 @@ class ViewController: UIViewController {
           Analytics.self,
           Crashes.self
         ])
+        
     }
 
 }
