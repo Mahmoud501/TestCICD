@@ -11,7 +11,7 @@ import AppCenterAnalytics
 import AppCenterCrashes
 
 class ViewController: UIViewController {
-//saves
+//savess
 
     @IBAction func crashClicked(_ sender: Any) {
         fatalError("Test CI/CD Issues")
@@ -19,7 +19,6 @@ class ViewController: UIViewController {
     
     @IBAction func clickedup(_ sender: Any) {
         fatalError("Test CI/CD Issues d2")
-afm,asm,fm,,mafs
     }
     
     
