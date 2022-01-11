@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBAction func clickedup(_ sender: Any) {
 //        fatalError("Test CI/CD Issues d2")
         showAlert()
+        fafaf
     }
     
     
