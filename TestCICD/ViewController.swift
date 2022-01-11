@@ -18,7 +18,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func clickedup(_ sender: Any) {
-        fatalError("Test CI/CD Issues d2")
+//        fatalError("Test CI/CD Issues d2")
+        showAlert()
     }
     
     
@@ -30,6 +31,12 @@ class ViewController: UIViewController {
           Crashes.self
         ])
         
+    }
+    
+    func showAlert() {
+        let alertView = UIAlertController.init(title: "test", message: "test", preferredStyle: .alert)
+        alertView.addAction(UIAlertAction.init(title: "ok", style: .default, handler: nil))
+        self.present(alertView, animated: true, completion: nil)
     }
 
 }
